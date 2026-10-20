@@ -11,6 +11,21 @@ For more information, check out:
 - [How to create custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills)
 - [Equipping agents for the real world with Agent Skills](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
 
+## About This Standalone Edition
+
+- **Main repository:** [anthropics/skills](https://github.com/anthropics/skills)
+- **Based on version:** upstream commit `dbd4588f9e1033efb41dad4bef2f7947c8993d44` (snapshotted 2026-10-20; upstream HEAD dated 2026-10-09)
+- **This edition:** v1.1.0 (v1.0.0 = clean baseline of the upstream version above)
+- **Repository name:** This edition is prepared as **skills-anthropics**, because the name `skills` is already used by the standalone edition of [mattpocock/skills](https://github.com/mattpocock/skills). The final repository name is pending the owner's decision; the upstream link above is unchanged.
+- **What was done:** Converted from a fork into a standalone repository (fresh history, baseline commit), then enhanced in place by Syed Mujtaba Abbas.
+- **Enhancements in this edition (v1.1.0):**
+  - This About section, with full upstream credit and version provenance
+  - `ENHANCEMENTS.md` — per-version changelog of everything changed in this edition
+  - `.github/dependabot.yml` — weekly GitHub Actions updates, plus pip updates for the two upstream requirements files (`skills/slack-gif-creator`, `skills/mcp-builder/scripts`)
+  - `.markdownlint.json` + `.github/workflows/markdown-check.yml` — markdown linting automation for the skill documentation (upstream ships no GitHub Actions workflows)
+  - `.editorconfig` — standard editor settings (UTF-8, LF, 2-space indent)
+- **Credit & licence:** All original work belongs to Anthropic, PBC and the upstream contributors. There is no root licence file: each skill carries its own `LICENSE.txt` — most are Apache License 2.0, but the document skills (`skills/docx`, `skills/pdf`, `skills/pptx`, `skills/xlsx`) are source-available under Anthropic's own terms, not open source (see their LICENSE.txt files and the note in this README). All licence files are preserved unchanged. This edition adds the enhancements listed above only.
+
 # About This Repository
 
 This repository contains skills that demonstrate what's possible with Claude's skills system. These skills range from creative applications (art, music, design) to technical tasks (testing web apps, MCP server generation) to enterprise workflows (communications, branding, etc.).
